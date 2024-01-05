@@ -1,0 +1,11 @@
+File: reggae2.wav, Predicted class: reggae
+File: jazz1.wav, Predicted class: jazz
+File: reggae1.wav, Predicted class: hiphop
+File: pop2.wav, Predicted class: disco
+File: metal1.wav, Predicted class: hiphop
+File: pop1.wav, Predicted class: disco
+File: metal.00000.wav, Predicted class: metal
+File: classical1.wav, Predicted class: blues
+File: country1.wav, Predicted class: rock
+File: blues1.wav, Predicted class: jazz
+File: jazz2.wav, Predicted class: rock
