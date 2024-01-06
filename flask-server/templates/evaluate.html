@@ -163,6 +163,25 @@
             display: none;
             margin-top: 20px;
         }
+
+        #newUploadButton {
+            background-color: #dba134;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin-top: 20px;
+            text-decoration: none; /* Remove underline for links */
+        }
+
+        #newUploadButton:hover {
+            background-color: #e67e22;
+        }
+        
     </style>
 </head>
 <body>
@@ -185,6 +204,12 @@
     <!-- Evaluate Button -->
     <button id="evaluateButton" onclick="evaluateSong('{{file_path}}')">Evaluate Song</button>
 
+    <!-- New Upload Button -->
+    <button id="newUploadButton" onclick="goToHomePage()">Upload New File</button>
+
+    <!-- File Input (hidden) -->
+    <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelection()">
+
     <!-- Display selected file name and audio icon -->
     <div id="selectedFile"></div>
     <script>
@@ -199,7 +224,6 @@
 
     <!-- Loading Spinner -->
     <div id="loadingSpinner"></div>
-
 
 </body>
 </html>
