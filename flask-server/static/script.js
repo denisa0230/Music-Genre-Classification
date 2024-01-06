@@ -34,10 +34,12 @@ function handleFileSelection() {
 
 function evaluateSong(file_path) {
     var evaluateButton = document.getElementById('evaluateButton');
+    var newUploadButton = document.getElementById('newUploadButton');
     var loadingSpinner = document.getElementById('loadingSpinner');
     var selectedFileDisplay = document.getElementById('selectedFile');
     var genre;
 
+    newUploadButton.style.display = 'none';
     evaluateButton.style.display = 'none';
     loadingSpinner.style.display = 'block';
     selectedFileDisplay.style.display = 'none';
@@ -67,5 +69,8 @@ function evaluateSong(file_path) {
         window.location.href = 'result/' + genre;
 
     }, 4500); // Simulated 4.5 seconds evaluation time
+}
 
+function goToHomePage() {
+    window.location.href = '/';
 }
