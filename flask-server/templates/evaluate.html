@@ -60,7 +60,7 @@
         }
 
         .dropdown-item {
-            padding: 12px 16px;
+            padding: 12px 30px;
             display: block;
             text-decoration: none;
             color: #fff;
@@ -163,6 +163,25 @@
             display: none;
             margin-top: 20px;
         }
+
+        #newUploadButton {
+            background-color: #dba134;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin-top: 20px;
+            text-decoration: none; /* Remove underline for links */
+        }
+
+        #newUploadButton:hover {
+            background-color: #e67e22;
+        }
+        
     </style>
 </head>
 <body>
@@ -174,9 +193,8 @@
         <div class="dropdown">
             <span class="dropdown-item">Menu</span>
             <div class="dropdown-content">
-                <a href="#" class="dropdown-item">About</a>
-                <a href="#" class="dropdown-item">Services</a>
-                <a href="#" class="dropdown-item">Contact</a>
+                <a href="about.html" class="dropdown-item">About</a>
+                <a href="team.html" class="dropdown-item">Our Team</a>
             </div>
         </div>
     </div>
@@ -184,6 +202,12 @@
 
     <!-- Evaluate Button -->
     <button id="evaluateButton" onclick="evaluateSong('{{file_path}}')">Evaluate Song</button>
+
+    <!-- New Upload Button -->
+    <button id="newUploadButton" onclick="goToHomePage()">Upload New File</button>
+
+    <!-- File Input (hidden) -->
+    <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelection()">
 
     <!-- Display selected file name and audio icon -->
     <div id="selectedFile"></div>
@@ -199,7 +223,6 @@
 
     <!-- Loading Spinner -->
     <div id="loadingSpinner"></div>
-
 
 </body>
 </html>

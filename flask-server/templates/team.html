@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myResult</title>
+    <title>myGenre team</title>
 
     <style>
         body {
@@ -14,13 +14,13 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #27ae60, #16a085); /* Green Background */
+            background: linear-gradient(to right, #3498db, #2c3e50); /* Gradient Background */
             color: #fff; /* White text */
         }
 
         .top-bar {
             width: 100%;
-            background-color: #27ae60;
+            background-color: #3498db;
             color: #fff;
             padding: 15px;
             text-align: center;
@@ -44,7 +44,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #27ae60;
+            background-color: #3498db;
             border: 1px solid #fff; /* Border color */
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@
         }
 
         .dropdown-item:hover {
-            background-color: #2dbd43;
+            background-color: #2980b9;
         }
 
         /* Animation for dropdown fade in */
@@ -89,29 +89,11 @@
             margin-bottom: 20px;
         }
 
-        #resultMessage {
-            font-size: 24px;
-            margin-top: 20px;
+        #about-text {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
         }
-
-        #newUploadButton {
-            background-color: #dba134;
-            color: white;
-            padding: 15px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: block;
-            margin-top: 20px;
-            text-decoration: none; /* Remove underline for links */
-        }
-
-        #newUploadButton:hover {
-            background-color: #e67e22;
-        }
-
     </style>
 </head>
 <body>
@@ -123,23 +105,17 @@
         <div class="dropdown">
             <span class="dropdown-item">Menu</span>
             <div class="dropdown-content">
+                <a href="home.html" class="dropdown-item">Home</a>
                 <a href="about.html" class="dropdown-item">About</a>
-                <a href="team.html" class="dropdown-item">Our Team</a>
             </div>
         </div>
     </div>
 
-    <h1>The genre of the song is {{genre}}</h1>
-
-    <img> src={{genre}}.jpg</img>
-
-    <div id="resultMessage">
-        <p>Congratulations! Your song evaluation is complete.</p>
-        <!-- You can customize the content based on the actual result -->
+    <div id="about-text">
+        <h2>myGenre team</h2>
+        <p>
+            aci dam autograf
+        </p>
     </div>
-
-    <!-- New Upload Button -->
-    <button id="newUploadButton" onclick="goToHomePage()">Upload Another File</button>
-
 </body>
 </html>
