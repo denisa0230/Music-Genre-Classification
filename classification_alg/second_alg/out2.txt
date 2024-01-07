@@ -1,0 +1,16 @@
+File: jazz1.wav, Predicted class: jazz
+File: pop4.wav, Predicted class: pop
+File: disco2.wav, Predicted class: rock
+File: jazz3.wav, Predicted class: hiphop
+File: hiphop1.wav, Predicted class: pop
+File: reggae4.wav, Predicted class: reggae
+File: pop2.wav, Predicted class: disco
+File: disco1.wav, Predicted class: disco
+File: metal2.wav, Predicted class: metal
+File: hiphop2.wav, Predicted class: reggae
+File: metal1.wav, Predicted class: hiphop
+File: reggae3.wav, Predicted class: rock
+File: jazz6.wav, Predicted class: pop
+File: classical1.wav, Predicted class: classical
+File: metal3.wav, Predicted class: metal
+File: jazz7.wav, Predicted class: jazz

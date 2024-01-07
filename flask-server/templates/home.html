@@ -18,6 +18,18 @@
             color: #fff; /* White text */
         }
 
+        .introduction {
+            text-align: center;
+            max-width: 900px;
+            min-width: 100px;
+            margin: 0 auto; /* Center the element horizontally */
+            padding: 20px; /* Add some padding for better spacing */
+            white-space: pre-line;
+            font-size: 20px; /* Adjust the font size to make the text bigger */
+            font-style: italic;
+        }
+        
+
         .top-bar {
             width: 100%;
             background-color: #3498db;
@@ -89,8 +101,7 @@
             margin-bottom: 20px;
         }
 
-        #uploadButton,
-        #evaluateButton {
+        #uploadButton {
             background-color: #4CAF50; /* Green */
             color: white;
             padding: 15px 20px;
@@ -103,8 +114,7 @@
             margin-top: 20px;
         }
 
-        #uploadButton:hover,
-        #evaluateButton:hover {
+        #uploadButton:hover {
             background-color: #45a049; /* Darker Green */
         }
 
@@ -178,6 +188,12 @@
                 <a href="/team" class="dropdown-item">Our Team</a>
             </div>
         </div>
+    </div>
+
+    <div class="introduction">
+        Welcome to our Music Genre Classifier, your go-to site for instant (more or less) music genre classification! 
+        Upload your audio file, and our algorithm will analyze it and fit it in one of the following genres : disco, reggae, hiphop, jazz, rock, country, metal, pop, classical or blues. 
+        Try it now!
     </div>
 
     <h1>Upload your audio file here</h1>

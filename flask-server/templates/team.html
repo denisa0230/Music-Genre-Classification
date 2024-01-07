@@ -20,7 +20,7 @@
 
         .top-bar {
             width: 100%;
-            background-color: #3498db;
+            background-color: #000000;
             color: #fff;
             padding: 15px;
             text-align: center;
@@ -44,7 +44,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #3498db;
+            background-color: #000000;
             border: 1px solid #fff; /* Border color */
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@
         }
 
         .dropdown-item:hover {
-            background-color: #2980b9;
+            background-color: #333333;
         }
 
         /* Animation for dropdown fade in */
@@ -94,12 +94,19 @@
             max-width: 600px;
             margin: 20px;
         }
+        body {
+            background-image: url('../static/images/team.png');
+            background-size: 100% auto;
+            background-position: center 50px;
+            background-repeat: no-repeat;
+          }
+
     </style>
 </head>
 <body>
     <script src="../static/script.js"></script>
     <div class="top-bar">
-        <h1>myGenre</h1>
+        <h1>myGenre Team</h1>
     
         <!-- Dropdown menu -->
         <div class="dropdown">
@@ -111,11 +118,6 @@
         </div>
     </div>
 
-    <div id="about-text">
-        <h2>myGenre team</h2>
-        <p>
-            aci dam autograf
-        </p>
-    </div>
+
 </body>
 </html>

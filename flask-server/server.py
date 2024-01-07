@@ -11,11 +11,20 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 def index():
     return render_template('home.html')
 
-# Personalized result page
+# Result page
 @app.route('/result/<genre>')
 def result(genre):
-
     return render_template('result.html', genre=genre)
+
+# About page
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+# Our Team page
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 # Save song and render the evaluation template
 @app.route('/evaluate', methods=['POST'])
@@ -31,8 +40,6 @@ def evaluate():
     file.save(file_path)
 
     return render_template("evaluate.html", file_path=file_path)
-
-   
 
 # Process file and transmit results
 @app.route('/process_file', methods=['POST'])
