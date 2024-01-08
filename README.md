@@ -34,4 +34,4 @@ Repo content:
 
 Our Team:
 
-![Local Image](./ourTeam.png)
+![Local Image](./teamPhoto.png)
