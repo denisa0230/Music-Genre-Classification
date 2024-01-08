@@ -5,6 +5,10 @@ It is made up of a web server written in Flask, an interface in HTML, CSS and Ja
 
 We split the three main parts of our project: frontend, classification algorithm and backend, and worked separately, at first. 
 
+Victor was responsible for the frontend part, implementing the HTML templates rendered by the server.
+Flavius wrote the Flask code for the server and assisted in the testing process for the three models developed.
+Denisa implemented the classification algorithms and integrated the frontend, the chosen algorithm and the backend. 
+
 We implemented three versions of the classification algorithm and added improvements to the second one, which gave the best results to the set of songs we used to test them and is the one we eventually went for.
 
 This GTZAN Music Genre Dataset used for training the models contains 1,000 song samples, each 30 seconds long, belonging to a total of 10 conventional music genres: blues, classical, country, disco, hip-hop, jazz, metal, pop, reggae, and rock. It also contains an alternate representation as images of Mel Spectrograms. Despite being beginner-friendly, the challenge with this dataset was that the restricted number of samples (less than 800 after a decent train-val-test split) was not ideal in order to get great results.
@@ -15,9 +19,7 @@ This GTZAN Music Genre Dataset used for training the models contains 1,000 song 
 
    * The third algorithm is based on **CNN**. It preprocesses the files similarly to the second algorithm in order to extract MFCC features and reshapes them for compatibility. The CNN model is, then, defined using the Keras Sequential API. It consists of multiple convolutional layers with activation functions, max-pooling layers, dropout layers for regularization, and dense layers for classification. The CNN model is compiled using binary cross-entropy loss, the Adam optimizer, and accuracy as the evaluation metric, trained and tested. (theoretical accuracy of around 88%)
 
-Working on these algorithms was one of the biggest challenges due to the limitations of the GTZAN dataset and laborious training and testing process. 
-
-After finalizing the algorithm, we integrated the frontend part and the algorithm into the backend. Then, we added new features to the frontend, integrated those in the Flask code, as well, adjusted the overall design and tested the application on various songs from different genres.
+Working on these algorithms was one of the biggest challenges due to the limitations of the GTZAN dataset and laborious training and testing processes. 
 
 Repo content:
   * "flask-server" directory => server logic
