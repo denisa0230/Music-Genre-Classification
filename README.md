@@ -20,18 +20,16 @@ Working on these algorithms was one of the biggest challenges due to the limitat
 After finalizing the algorithm, we integrated the frontend part and the algorithm into the backend. Then, we added new features to the frontend, integrated those in the Flask code, as well, adjusted the overall design and tested the application on various songs from different genres.
 
 Repo content:
-    * "flask-server" directory => server logic
+  * "flask-server" directory => server logic
       * static folder => Javascript files
       * templates folder => HTML files
       * server.py => Flask server (for testing, enter **python3 server.py** command in terminal and go to http://127.0.0.1:5000/)
       * GTZAN_LSTM.h5 => classification model based on the second algorithm
       * classify.py => program that fits a given song into a genre category based on the model mentioned above
       * uploads => folder that stores the uploaded files when pushing the button "Upload File"
-    * "classification_alg" directory
+  * "classification_alg" directory
       * test_songs => songs used to test the model
       * Data => GTZAN dataset
-      * first_alg/second_alg/third_alb => the 3 classification algorithms test files
-
-Our Team:
+      * first_alg/second_alg/third_alg => the 3 classification algorithms and programs used to test them 
 
 ![Local Image](./teamPhoto.png)
