@@ -5,9 +5,9 @@ It is made up of a web server written in Flask, an interface in HTML, CSS and Ja
 
 We split the three main parts of our project: frontend, classification algorithm and backend, and worked separately, at first. 
 
-Victor was responsible for the frontend part, implementing the HTML templates rendered by the server.
-Flavius wrote the Flask code for the server and assisted in the testing process for the three models developed.
-Denisa implemented the classification algorithms and integrated the frontend, the chosen algorithm and the backend. 
+  * Victor was responsible for the frontend part, implementing the HTML templates rendered by the server.
+  * Flavius wrote the Flask code for the server and assisted in the testing process for the three models developed.
+  * Denisa implemented the classification algorithms and integrated the frontend, the chosen algorithm and the backend. 
 
 We implemented three versions of the classification algorithm and added improvements to the second one, which gave the best results to the set of songs we used to test them and is the one we eventually went for.
 
